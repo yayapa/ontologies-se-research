@@ -2,10 +2,6 @@
 
 In dieser Proseminar-Arbeit sollen zunächst Ontologien als Beschreibungsansatz anhand von Bewertungskriterien analysiert werden. Geben Sie einen Überblick zum aktuellen Stand der Forschung über den Einsatz von Ontologien in der Software-Engineering-Meta-Forschung und bewerten Sie diese Ansätze.
 
-## Achtung
-* Makefile anpassen, sonst baut es nicht
-* <Name> durch den Namen des Haupt-Tex-Files ersetzen
-
 ## Proseminar-Portal (Kompakter Überblick)
 * [Portal:Studentische Arbeiten/Proseminar](https://sdqweb.ipd.kit.edu/wiki/Portal:Studentische_Arbeiten/Proseminar)
 
