@@ -33,3 +33,7 @@ In dieser Proseminar-Arbeit sollen zunächst Ontologien als Beschreibungsansatz 
 * Scopus - https://www.scopus.com
 * Web of Science – https://apps.webofknowledge.com/
 * BASE – https://www.base-search.net/
+
+## Elektronische Aufsatzlieferung (LEA)
+* LEA (Lokales Elektronisches Aufsatzliefersystem) liefert Mitarbeiterinnen und Mitarbeitern sowie Studierenden des KIT kostenlos Scans von Aufsätzen aus gedruckten Zeitschriften der KIT-Bibliothek (falls Publikation nicht online verfügbar).
+* [Elektronische Aufsatzlieferung (LEA)](https://www.bibliothek.kit.edu/cms/lea.php)
