@@ -161,12 +161,13 @@ This section aims to show different types of ontologies, which are used by scien
 		\item 
 		\begin{align*}
 			\forall subject, SetOfTreatment \\
-			Execution(subject, SetOfTreatement) $\rightarrow$ Task(ta_1) \land...\land Task(ta_n)
+			Execution(subject, SetOfTreatement) \rightarrow Task(ta_1) \land...\land Task(ta_n)
 		\end{align*}
 		\item 
 		\begin{align*}
-			Task(ta_n) $\rightarrow$ Training(subject,t_r,a,p) \lor Applying(subject,t_e,a,p)
+			Task(ta_n) \rightarrow Training(subject,t_r,a,p) \lor Applying(subject,t_e,a,p)
 		\end{align*}
+		
 	\end{enumerate}
 	The last, but not least is validating of presented ontology by obtaining the \textbf{Results} on existing data. Thus, in order to illustrate the power of the suggested ontology, it has been chosen an experiment that was originally conducted by Basili and Selby\cite{Bas87}. The objective of the study was \flqq{compare three state-of-the-practice software testing techniques: a) code reading by stepwise abstraction, b) functional testing using equivalence partitioning and boundary value analysis, and c) structural testing using 100 percent statement coverage criteria.}\frqq\cite[abstract]{Bas87}. So, the Experimental Design of the study: 32 Subjects were divided in 3 groups(advanced, intermediate and junior) and  each of them applied 3 software testing techniques(code reading, functional testing and structural testing) on 3 different pieces of software(text processor, numeric abstract data type and database maintainer). According to this description the EXPEROntology was instantiated as following(for instance only for one subject S1).
 	\begin{enumerate}
@@ -177,27 +178,24 @@ This section aims to show different types of ontologies, which are used by scien
 		\end{align*}
 		\item \begin{align*}
 			Factor = (Expertise, Technique, Program) \\
-			for Expertise, Treatment = {Advanced, Intermediate, Junior} \\
-			for Technique, Treatment = {Code\ Reading, Functional\ Testing, Structural\ Testing} \\
-			for Program, Treatment = {P1,P2,P3}
+			for\ Expertise, Treatment = \{Advanced, Intermediate, Junior\} \\
+			for\ Technique, Treatment = \{Code\ Reading, Functional\ Testing, Structural Testing\} \\
+			for\ Program, Treatment = \{P1,P2,P3\} \\
 			SetOfTreatment = {(Advanced, Code\ Reading, P3)}
 		\end{align*}
-		\item[3. and 4.] 
+		\item and 4.  
 		\begin{align*}
-			Execution() $\rightarrow$ \\
-			Training(S1, Code Reading, --) \land ... \\
-			Training(S1, Functional Testing, --, --) \land \\
-			Training(S1, Structural Testing, --) \land \\
-			Applying(S1, Code Reading, P3, --) \land \\
-			Applying(S1, Functional Testing, P3 --) \land \\
-			Applying(S1, Structural Testing, P3 --) \land ...	
+			Execution() \rightarrow  \\
+			Training(S1, \{Code\ Reading\ \lor Functional\ Testing \lor  Structural\ Testing\}, --, --) \land ... \\
+			Applying(S1,\{Code\ Reading\ \lor Functional\ Testing \lor  Structural\ Testing\}, P3, --) \land ... \\
 		\end{align*}
 	\end{enumerate}
   
 	 After the instantiating of the ontology, we can observe that all pieces of information given in the conducted study can be encapsulated and saved in EXPEROntology without loosing any information. \newline
 	 
-	 Besides, we can observe the missing values on the predicate: Training - artifact and period of training, Applying - period for the application. After looking in the study we can see that it does not bring them indeed. It allows us to make one more important conclusion \flqq{the ontology can also be used as a mechanism to improve the obtained data set from the Lab Package}\frqq\cite[p. 6]{Gar08} 
-	 \textbf{Future work}
+	 Besides, we can observe the missing values on the predicate: Training - artifact and period of training, Applying - period for the application. After looking in the study we can see that it does not bring them indeed. It allows us to make one more important conclusion \flqq{the ontology can also be used as a mechanism to improve the obtained data set from the Lab Package}\frqq\cite[p. 6]{Gar08} \newline
+	 
+	 Also, the authors intend in \textbf{Future works} compbine the presented EXPEROntology with OntoTest. By merging these two ontology it will be possible to create an whole architecture that \flqq{supports the development of environments/tools to automate, software testing activities and related experimental studies}\frqq\cite[p.6]{Gar08}
 	 \newline
 	 
 	 We have just looked at the ontology for the controlled experiments. However, there exists another work from alternative perspective, which was suggested by H. Siy and Y. Wu\cite{SiyWu12}. Although they had the similar \textbf{Objectives}:
@@ -232,7 +230,8 @@ This section aims to show different types of ontologies, which are used by scien
 	
 	Finally, the created ontology concept was evaluated on experiments on software inspections\cite{Bas99}. Aligning to presented concepts the concrete values i. e. \textit{Treatment} - reading technique, \textit{Subject} - reviewer, \textit{Object} - software requirements document. The \textbf{Results} were \flqq{encouraging}\frqq\cite[p. 15]{SiyWu12}. The author states no it was not found any validation after the applying all constraints. Moreover, if the ontology was fed by  invalid assignments, it was possible to observe inconsistencies as expected.
 	
-	It remains to be said that the authors consider the \textbf{Future} of their presented ontology and the preliminary results that it has shown as a step towards organizing and accommodating such a ontology, which can also support other Software Engineering knowledge domains(not only the systematic review process). 
+	It remains to be said that the authors consider the \textbf{Future} of their presented ontology and the preliminary results that it has shown as a step towards organizing and accommodating such a ontology, which can also support other Software Engineering knowledge domains(not only the systematic review process).  \newline
+	
 	
 	To the very end, I would like to discuss the similarities and differences of suggested in this sections ontologies. Firstly, it is remarkable that all researchers point on the advantages and opportunities which the adoption of ontologies give them in realization of their intentions. In the researcher's opinion, an ontology is the best tool to accumulate any experience or knowledge(especially, from experiments), formalize them for later representing, sharing and transferring. Nevertheless, ontology is not a silver bullet, because of apparent drawbacks. It cannot depict preciously all objects of the real world and relations between them. An ontology is still restricted by the first-order logic. But sometimes it can be enough to get desired results. Moreover, we could observe that the modeling of each presented ontology was done by using of different ontology languages or at least different kinds of the same language what can also lead to the barriers by applying of the presented ontologies and making them standards in the research field. Secondly, TODO    	 
 \section{Ontology-based systems in scientific search}
