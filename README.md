@@ -1,169 +1,38 @@
-LaTeX-Vorlage für Seminararbeiten
-=======
-(English Version below.)
+# Proseminar SoSe'20 - Investigation of Ontologies in Software-Engineering-Meta-Research
 
-Dies ist die Vorlage für Seminar am Lehrstuhl Software Design and
-Quality (SDQ) am Institut für Datenorganisation und Programmstrukturen (IPD)
-des Karlsruher Instituts für Technologie (KIT).
+In dieser Proseminar-Arbeit sollen zunächst Ontologien als Beschreibungsansatz anhand von Bewertungskriterien analysiert werden. Geben Sie einen Überblick zum aktuellen Stand der Forschung über den Einsatz von Ontologien in der Software-Engineering-Meta-Forschung und bewerten Sie diese Ansätze.
 
-Vielen Dank an Markus Kohm (http://www.komascript.de) für die hilfreiche
-Unterstützung beim Erstellen dieser Vorlage.
+## Proseminar-Portal (Kompakter Überblick)
+* [Portal:Studentische Arbeiten/Proseminar](https://sdqweb.ipd.kit.edu/wiki/Portal:Studentische_Arbeiten/Proseminar)
 
-Version
-=======
-Version: 1.0.2
-Autor: Dr.-Ing. Erik Burger (burger@kit.edu)
-mit Beiträgen von Joshua Gleitze
+## Literatur
+### Referenzbasierte Suche 
+* Wohlin, Claes. "Guidelines for snowballing in systematic literature studies and a replication in software engineering." Proceedings of the 18th international conference on evaluation and assessment in software engineering. 2014.
 
-Siehe https://sdqweb.ipd.kit.edu/wiki/Dokumentvorlagen
+### Meta-Forschung
+* Ioannidis, John PA, et al. "Meta-research: evaluation and improvement of research methods and practices." PLoS biology 13.10 (2015).
+* Ioannidis, John PA. "Meta-research: Why research on research matters." PLoS biology 16.3 (2018): e2005468.
+* Hardwicke, Tom E., et al. "Calibrating the scientific ecosystem through meta-research." Annual Review of Statistics and its Application 7 (2019).
+* Puljak, Livia. "on-research studies or methodological studies are primary research." Journal of clinical epidemiology 112 (2019): 95.
+* Krishnan, Vinod. "Meta-research–extracting more science out of science!." Journal of the World Federation of Orthodontists 7.4 (2018): 121.
 
-Verwendung
-==========
-Das vorliegende Paket dient als Vorlage für eine Seminararbeit Sie können dazu
-die bestehende Hauptdatei seminar.tex und die einzelnen Kapiteldateien im
-Verzeichnis sections/ anpassen, indem Sie den Beispieltext entfernen und durch
-eigene Inhalte entfernen. Bitte ändern Sie keine Layout-Parameter wie
-Schriftgröße, Ränder, Zeilenabstände u.ä. an der Datei, damit die Ausarbeitungen
-in einem einheitlichen Format erscheinen.
+### Ontologien in SE-Forschung
+* de Almeida Biolchini, Jorge Calmon, et al. "Scientific research ontology to support systematic review in software engineering." Advanced Engineering Informatics 21.2 (2007): 133-151.
+* Siy, Harvey, and Yan Wu. "An ontology to support empirical studies in software engineering." 2009 International Conference on Computing, Engineering and Information. IEEE, 2009.
+* Garcia, Rogério Eduardo, et al. "An Ontology for Controlled Experiments on Software Engineering." SEKE. 2008.
+* Scatalon, Lilian Passos, Rogério Eduardo Garcia, and Ronaldo Celso Messias Correia. "Packaging Controlled Experiments Using an Evolutionary Approach Based on Ontology (S)." SEKE. 2011.
+* Ferreira, Waldemar, et al. "Toward a Meta-Ontology for Accurate Ontologies to Specify Domain Specific Experiments in Software Engineering." International Conference on Product-Focused Software Process Improvement. Springer, Cham, 2015.
+* Cuadrado-Gallego, J., et al. "Epistemological and ontological representation in software engineering." International Conference on Computational Science. Springer, Berlin, Heidelberg, 2007.
+* Ferreira, Waldemar, Maria Teresa Baldassarre, and Sergio Soares. "Codex: A metamodel ontology to guide the execution of coding experiments." Computer Standards & Interfaces 59 (2018): 35-44.
+* Brack, Arthur, et al. "Requirements Analysis for an Open Research Knowledge Graph." arXiv preprint arXiv:2005.10334 (2020).
 
-Sprache
--------
-Die Sprache des Dokuments ist standardmäßig auf Englisch eingestellt.
-Dies kann in der \documentclass-Anweisung am Anfang von seminar.tex auf Deutsch 
-umgestellt werden.
+## Literatur-Suche
+* ACM - https://dl.acm.org/
+* Google Scholar - https://scholar.google.de/
+* Scopus - https://www.scopus.com
+* Web of Science – https://apps.webofknowledge.com/
+* BASE – https://www.base-search.net/
 
-Einseitig/doppelseitig
-----------------------
-Das Dokument ist standardmäßig auf doppelseitiges Layout eingestellt, kann aber
-durch die Angabe von "oneside" in der \documentclass-Anweisung am Anfang von
-seminar.tex auf einseitiges Layout umgestellt werden.
-
-Draft-Modus
------------
-Standardmäßig ist der draft-Modus aktiv. Dieser kann ebenfalls in der
-\documentclass-Anweisung am Anfang von seminar.tex auf "final" umgestellt werden,
-um eine abgabefertige Version zu erzeugen. Im Draft-Modus werden 
-todo-Notizen sowie Platzhalter für fehlende Abbildungen angezeigt, in der
-Final-Version jedoch ausgeblendet.
-
-LaTeX allgemein
----------------
-Siehe https://sdqweb.ipd.kit.edu/wiki/LaTeX
-
-Dateistruktur
-============
-seminar.tex
-----------
-Dies ist die Hauptdatei des LaTeX-Dokuments. Bitte tragen Sie dort Ihre
-Daten ein. Benennen Sie dann die Datei am besten um, damit sie später von
-Ihrem Betreuer von anderen leicht unterschieden werden kann
-(z.B. in thesis_erik_burger.tex).
-
-seminar.bib
-----------
-Dies ist eine BibTeX-Datei, in der Sie Ihre Literatur-Referenzen sammeln
-können. Wir empfehlen die Verwendung von biblatex und biber statt BibTeX. 
-Dies ist in der Ausarbeitungsvorlage bereits so voreingestellt. Für 
-SDQ-relevante Publikationen können Sie die zentralen BibTeX-Dateien einbinden,
-siehe https://sdqweb.ipd.kit.edu/wiki/BibTeX-Literaturlisten
-
-sdqseminar.cls
--------------
-Dies ist die Vorlage, die die Stil-Informationen für das Dokument enthält.
-Im Sinne eines einheitlichen Ausarbeitungsstils soll diese Datei nicht
-verändert werden.
-
-images/
-------
-In diesem Verzeichnis befinden das das SDQ-Logo als PDF und EPS.
-
-sections/
----------
-In diesem Verzeichnis können Sie ihre Inhaltsabschnitte als einzelne
-.tex-Dateien anlegen. Wir empfehlen Ihnen das Aufteilen der Dateien nach
-Abschnitten.
-
-README
-------
-Dieser Text.
-
-English Version
-===============
-This is a template for student's seminar theses at the chair of Software Design
-and Quality (SDQ) at the Institute of Program Structures and Data Organization
-(IPD) at Karlsruhe Institute of Technology (KIT).
-
-Many thanks to Markus Kohm (http://www.komascript.de) for his support in
-creating the template.
-
-Version
-=======
-Version: 1.0.2
-Author: Dr.-Ing. Erik Burger (burger@kit.edu)
-with contributions by Joshua Gleitze
-
-See https://sdqweb.ipd.kit.edu/wiki/Dokumentvorlagen
-
-Usage
-=====
-This package is used as a template for student seminar theses. To use it, adapt
-the main file seminar.tex and the files for the chapters in the directory
-sections/ by removing the example text and replacing it with your own content.
-Please do not change any layout parameters such as font size, margins, line
-spacing etc., so that the theses appear in a uniform way.
-
-Language
---------
-The standard language of this document is English. You can change the
-language in the \documentclass command at the beginning of seminar.tex.
-German and English are available.
-
-One-sided/two-sided layout
---------------------------
-The standard format is two-sided layout. You can change this to one-sided
-layout in the \documentclass command at the beginning of seminar.tex.
-
-Draft mode
-----------
-The draft mode is activated by standard and can be switched to "final"
-in the \documentclass command at the beginning of seminar.tex.
-In draft mode, todo-notes and placeholders for missing graphics are displayed,
-while they are omitted in the final mode.
-
-LaTeX
------
-See https://sdqweb.ipd.kit.edu/wiki/LaTeX
-
-File structure
-==============
-seminar.tex
-----------
-This is the main file of your LaTeX document. Please insert your data there.
-It is recommended to rename the file so that your advisor can distinguish
-different theses (e.g., in seminar_erik_burger.tex).
-
-seminar.bib
-----------
-You can use this BibTeX file to collect your literature.
-We recommend using biblatex and biber instead of BibTeX.
-The template is already configured in this way.
-You can include the SDQ literature database for SDQ-relevant publications,
-see https://sdqweb.ipd.kit.edu/wiki/BibTeX-Literaturlisten
-
-sdqseminar.cls
--------------
-This is the style template for the document. Please do not modify this file,
-so that all theses appear in the same style.
-
-images/
-------
-This directory contains the SDQ logo in PDF and EPS.
-
-sections/
----------
-This directory contains your content sections, split in single .tex files.
-We recommend splitting your sections into single files.
-
-README
-------
-This text.
+## Elektronische Aufsatzlieferung (LEA)
+* LEA (Lokales Elektronisches Aufsatzliefersystem) liefert Mitarbeiterinnen und Mitarbeitern sowie Studierenden des KIT kostenlos Scans von Aufsätzen aus gedruckten Zeitschriften der KIT-Bibliothek (falls Publikation nicht online verfügbar).
+* [Elektronische Aufsatzlieferung (LEA)](https://www.bibliothek.kit.edu/cms/lea.php)
