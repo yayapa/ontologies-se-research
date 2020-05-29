@@ -33,7 +33,8 @@ In this section the required knowledge foundations are introduced and set up.
 		 
 		\subsubsection{Ares of Meta-research}
 		Discussing the existing problems about contemporary research the logical question arises: is it possible to provide a map of ongoing efforts in the field Meta-research and connect the multiple already made, but still fragmented attempts across science. These goals were set by J. Ioannidis in its work \flqq{Meta-research: Evaluation and Improvement of Research Methods and practices}\frqq \cite{Ioa15}. \newline
-		His suggestions can be summed up in the following categorization. There are five major areas of interests in meta-research: methods, reporting, reproducibility, evaluation and incentives. Each of them was not only explicitly defined and with examples illustrated, but also for each area the existing initiatives were found. These mentioned features of the work can be summarized as following categorizations:  
+		His suggestions can be summed up in the following categorization. There are five major areas of interests in meta-research: methods, reporting, reproducibility, evaluation and incentives. Each of them was not only explicitly defined and with examples illustrated, but also for each area the existing initiatives were found. These mentioned features of the work can be summarized as following categorizations:
+		\label{sec:AreasOfMetaresearch:cat}  
 		\begin{enumerate}
 			\item{\textbf{Methods}:} practices for performing research  (\textbf{e.g.} study design, methods, statistics). With \textbf{specific interests} in biases and questionable practices in conducting
 			research, methods to reduce such biases, metaanalysis. Existing \textbf{Initiatives} such as Cochrane Collaboration for systematic reviews of health care or Campbell Collaboration for the same ones but in social science.
@@ -52,7 +53,7 @@ In this section the required knowledge foundations are introduced and set up.
 
 \section{Ontology in Software-Engineering-Meta-Research}
 This section aims to show different types of ontologies, which are used by scientists for Meta-research in Software Engineering, and also to compare them.  \newline
- Firstly, in order to show all this diversity, the Biolchini's\cite{Bio07} classification of empirical studies in SE has been chosen. It shows \flqq{the concepts of Primary and Secondary Studies on Software Engineering at a high level\cite[p. 1]{Gar08}.}\frqq. According to this classification any experimental study comprises two types of investigations: Primary and Secondary\cite[p. 134]{Bio07}. Primary studies are used for evaluation of the researcher's hypothesis and represented above all by Controlled Experiments. In contrast, Secondary studies serve for comparisons between individual investigations to generalize the results and are represented by systematic reviews. \newline
+ Firstly, in order to show all this diversity, the Biolchini's\cite{Bio07} classification of empirical studies in SE has been chosen. It shows \flqq{the concepts of Primary and Secondary Studies on Software Engineering at a high level}\frqq\cite[p. 1]{Gar08}. According to this classification any experimental study comprises two types of investigations: Primary and Secondary\cite[p. 134]{Bio07}. Primary studies are used for evaluation of the researcher's hypothesis and represented above all by Controlled Experiments. In contrast, Secondary studies serve for comparisons between individual investigations to generalize the results and are represented by systematic reviews. \newline
  Secondly, in order to make the introduced ontologies comparable, the template  \flqq{Problem, Objectives, Suggested method and Future works}\frqq that was used by me during the reading of papers, will be applied. Although this segmentation cannot transfer the whole information contained in papers, it should be sufficient for the set intentions.
     
  
@@ -88,10 +89,7 @@ This section aims to show different types of ontologies, which are used by scien
 	  As we can observe, the above described part of the ontology \textbf{results} in an object that directly linked with Systematic review protocol template. The full ontology concepts an roles can ve read in the paper, but the given example in depth of levels depicts the power comprehensive cover of SR needs. \newline
 	  
 	  Though the presented ontology was at the moment of publication only in development, it can esteemed as robust for entire diversity of SRs in different types of Studies. Nevertheless, the  author points on possible \textbf{future works}, which are mainly related to merging of the presented Scientific Research Ontology with Software Engineering Ontology and successive integrating them into eSEE (experimental Software Engineering Environment). Moreover, this could lead towards a wider Experimental Software Engineering Ontology that theoretically will combine all received evidence-based knowledge in Software Engineering.  
-	   
-	//TODO RESULT!
-	
-	
+	 
 	
 	\subsection{Ontologies for Controlled Experiments on Software Engineering}
 	In contrast to the previous subsection, this one is about a part of Primary Studies, where one of the main subjects are Controlled Experiments. They serve Experimental Software Engineering as an instrument to build a body of knowledge for diverse and exceeding software practices to support making successful decision in SE. \newline
@@ -145,7 +143,6 @@ This section aims to show different types of ontologies, which are used by scien
 		\item Analysis: gathering \textit{Result}s from Operation phase are to be used in \textit{Analysis} of different types, such as \textit{Confirmatory}(testing \textit{Hypothesis formalized}) or \textit{Exploratory}(investigating new relationships)   
 	\end{enumerate}
 	Since it is desired to make all these concepts working, we are missing the connection axioms for the entire ontology. It is enough to define four predicates:
-	TODO
 	\begin{enumerate}
 		\item
 		\begin{align*}
@@ -191,9 +188,9 @@ This section aims to show different types of ontologies, which are used by scien
 		\end{align*}
 	\end{enumerate}
   
-	 After the instantiating of the ontology, we can observe that all pieces of information given in the conducted study can be encapsulated and saved in EXPEROntology without loosing any information. \newline
+	 After the instantiating of the ontology, we can observe that all pieces of information given in the conducted study can be encapsulated and saved in EXPEROntology without loosing any information.
 	 
-	 Besides, we can observe the missing values on the predicate: Training - artifact and period of training, Applying - period for the application. After looking in the study we can see that it does not bring them indeed. It allows us to make one more important conclusion \flqq{the ontology can also be used as a mechanism to improve the obtained data set from the Lab Package}\frqq\cite[p. 6]{Gar08} \newline
+	 Besides, we can observe the missing values on the predicate: Training - artifact and period of training, Applying - period for the application. After looking in the study we can see that it does not bring them indeed. It allows us to make one more important conclusion \flqq{the ontology can also be used as a mechanism to improve the obtained data set from the Lab Package}\frqq\cite[p. 6]{Gar08}. 
 	 
 	 Also, the authors intend in \textbf{Future works} compbine the presented EXPEROntology with OntoTest. By merging these two ontology it will be possible to create an whole architecture that \flqq{supports the development of environments/tools to automate, software testing activities and related experimental studies}\frqq\cite[p.6]{Gar08}
 	 \newline
@@ -233,7 +230,9 @@ This section aims to show different types of ontologies, which are used by scien
 	It remains to be said that the authors consider the \textbf{Future} of their presented ontology and the preliminary results that it has shown as a step towards organizing and accommodating such a ontology, which can also support other Software Engineering knowledge domains(not only the systematic review process).  \newline
 	
 	
-	To the very end, I would like to discuss the similarities and differences of suggested in this sections ontologies. Firstly, it is remarkable that all researchers point on the advantages and opportunities which the adoption of ontologies give them in realization of their intentions. In the researcher's opinion, an ontology is the best tool to accumulate any experience or knowledge(especially, from experiments), formalize them for later representing, sharing and transferring. Nevertheless, ontology is not a silver bullet, because of apparent drawbacks. It cannot depict preciously all objects of the real world and relations between them. An ontology is still restricted by the first-order logic. But sometimes it can be enough to get desired results. Moreover, we could observe that the modeling of each presented ontology was done by using of different ontology languages or at least different kinds of the same language what can also lead to the barriers by applying of the presented ontologies and making them standards in the research field. Secondly, TODO    	 
+	To sum up, we could observe in this section four ontologies that were introduced by three different groups of researchers. Although the scientists had set different objectives and problems that they tried to solve, here can be discussed similarities of suggested in this sections ontologies. Firstly, it is remarkable that all researchers point on the advantages and opportunities which the adoption of ontologies give them in realization of their intentions. In the researcher's opinion, an ontology is the best tool to accumulate any experience or knowledge(especially, from experiments), formalize them for later representing, sharing and transferring. Nevertheless, ontology is not a silver bullet, because of apparent drawbacks. It cannot depict preciously all objects of the real world and relations between them. An ontology is still restricted by the first-order logic. But sometimes it can be enough to get desired results. Secondly, even though only Biolchini et al.\cite{Bio07} intended to work directly on the supporting of systematic reviews, the other presented ontology also pertain to them e. g. Garcia et.al.\cite{Gar08} evaluated their ontology on experiments with V\&V techniques\cite{Bas87} and H. Siy and Y. Wu \cite{SiyWu12} on experiments with software inspections\cite{Bas99}. This congeniality shows us, how important are systematic reviews and thereby EBSE in modern Software Engineering.\newline
+	To the very end, let us discuss the differences between the presented ontologies. First of all, according to the categorization in \autoref{sec:AreasOfMetaresearch:cat}, the Biolchini et. al. for supporting systematic reviews\cite{Bio07} must definitely belong to the area Methods as by analogy provided initiative Cochrane Collabaration for Systematic reviews of health care; Garcia et. al. two ontologies\cite{Gar08}\cite{Gar11} exactly match the category Reproducibility, since their main objective to support replication of the SE studies; the last one by H. Siy and Y. Wu\cite{SiyWu12} might belong to as Reproducibity as Methods because of similarities with three presented before. Finally, we could observe that the modeling of each presented ontology was done by using of different ontology languages or at least different kinds of the same language what can also lead to the barriers by applying of the presented ontologies and making them standards in the research field.
+	  	 
 \section{Ontology-based systems in scientific search}
 During the searching and reading of the suggested and found by reference-based search papers the two facts appeared in sight: Ontologies are used in contemporary search engines and the the scientific world is using ontologies successfully for a big amount of tasks. Therefore, based on database search (because this was not the original accent of the suggested literature list) the papers about Ontology-based systems in scientific search were found and will be analyzed further in this section.
 		\subsection{Semantic Web}
