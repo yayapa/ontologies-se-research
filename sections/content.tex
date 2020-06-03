@@ -11,18 +11,33 @@
 %% Version 1.0.2, 2020-05-07
 \section{Foundations}
 Before we go to the main sections of this seminar work, there should be introduced the main terms and concepts that are necessary for understanding and will be used during the whole work.
+
 	\subsection{Ontology in Computer Science}
-	
+	Knowledge is a fundamental concept of our world. There are some requirements that Knowledge should fulfill in order to be represented in Computer Science i. e. Knowledge must be adequate, representative in machine form and, finally, able to elaborate new Knowledge. Therefore, scientist have been trying to create a method of representation of Knowledge, since the inventing of the first computers. Here is very important to make a difference between information and knowledge. The contemporary computers can represent information for a very long time, but we still need people to interpret it. Thus, we should be able not only represent the information that we have, but also give this information semantic,namely to give the terms meaning. That is why we need ontologies. An ontology in Computer Science is \flqq{an explicit specification of a conceptualization}\frqq [cite Tom Gruber 1993] \ , where a conceptualization is an abstract model of some knowledge domain and an explicit specification represents classes/concepts/terms, their properties and attributes, exemplars of classes. In sum, an ontology sets the general understanding of a knowledge domain and, moreover, the common language for representing of knowledge.     
 		\subsubsection{Ontology languages}
-		The short historical survey of ontology languages approaches, based on lectures notes of course \grqq{Ontology and knowledge representation} from Prof. Boris Konev  Head of Department of Computer Science, the University of Liverpool, UK and member of the Knowledge Representation Research Group \cite{Kon10}. 
-		In this sequence
-			\begin{itemize}
-				\item Resource Description Framework Schema: the first standard of W3C for ontologies \cite{rdfs04}, its semantic power and drawbacks
-				\item Description Logic: introduction in Description Logic, EL language, its architecture and semantic
-				\item Web Ontology Language: the newest standard of W3L based on Description Logic \cite{owl04}
-			\end{itemize}
+		An ontology language must be: clear syntax (computer readable), formal semantic (unique meaning), effective computer analyzable and sufficient descriptive power. 
+		[footnote: The following subsection is fully based on \cite{Kon10}, unless it is stated otherwise  The literal citations will be quoted and citated].
+		
+		Here should be noticed that there already exist some approaches that are known for all informatics student. They are ER-models and UML-diagrams. Indeed, they can be used for representative explanation of domain knowledge. Nevertheless, they are still complex and badly readable for computers. The first ontology languages that we look at will be the Resource Description Framework(RDF) and RDF with schema vocabulary (RDFS), which was recommended by W3C\cite{w3c01}.
+		
+		The idea of RDF is representing of everything though triples \textit{<subject, predicate, object>}, where subject, predicate and object are resources; every resource is identified by a unique reference (URI) and every RDF-statement consists of resources. The syntax that is used for machine interpretation is based on XML. In order to make it more clearly, let us represent the actual seminar work and its relations using RDF. The representing in triples, graph and XML-notation see on \autoref{fig:rdf}.
+		
+		\begin{figure}
+			\centering
+			\includegraphics[width=16cm]{images/rdf.png}
+			\caption{RDF example}
+			\label{fig:rdf}
+		\end{figure}  
+		
+		Although RDS allows to describe the predicates (properties) of resources, but it is still not permitted to express between predicate and classes of resources. This probelm is solved in RDFS. Hence, the expressions like rdfs:subClassOf (subset relation), rdfs:range, rdf:type etc. become possible. For example, \textit{<isWrittenBy, type, Property>} means to understand that \textit{isWrittenBy} is a property or \textit{<isWrittenBy, range, Person>} - those, who writes is a person.
+		
+		Despite the opportunities that RDFS gives us, it still has the following problem: it is not enough expressive i.e. there is no local restrictions on a knowledge domain e.g. it is not possible to make a predicate \textit{hasChild} differ wether it is applied on a class Person or a class Animal (no semantic difference); there is no transitive, symmetric or reverse predicate e.g. it is not possible to express with a predicate \textit{touches} if a thing A touches another thing B, then B also touches A; and many other restrictions.
+		
+		All these restrictions made scientist to elaborate a new knowledge representation language that is called Description Logic. It is a pure theoretical language that helps to understand the main concepts and terms of contemporary ontology language standards such as Web Ontology Language.        
+		
+		
 		\subsubsection{Expediency and reasons for using of Ontologies}
-		Here is discussed, when and where the onologies should be used and when it is superfluous
+		Here is discussed, when and where the ontologies should be used and when it is superfluous
 		\subsubsection{Examples of Ontologies}
 		Here come the examples of ontologies in medicine, then in Meta-research and SE.
 		
@@ -31,7 +46,7 @@ Before we go to the main sections of this seminar work, there should be introduc
 		A statement \flqq{Science is one of the main driver of human progress}\frqq \ is indisputable and proved by growing number of published papers and publishing authors\cite{Ioa14}. Naturally people face the problems such as data sharing, replications of experiments, its ownership and many others. Moreover, the research practices suffer from lack of systematization and inefficiency. For example, according to \cite{Mac14}  85\% of resources in biomedical research are wasted because of above-called reasons. Therefore, there exists the urgent need of Meta-research, which aims to include the evaluation of diverse researches with succeeding suggestions of improvement for research practices.    
 		
 		 
-		\subsubsection{Ares of Meta-research}
+		\subsubsection{Areas of Meta-research}
 		Discussing the existing problems about contemporary research a logical question arises, wether it is possible to provide a map of ongoing efforts in the field Meta-research and connect the multiple already made but still fragmented attempts across science. These goals were set by J. Ioannidis et al.' work \flqq{Meta-research: Evaluation and Improvement of Research Methods and practices}\frqq \cite{Ioa15}. \newline
 		His suggestions can be summed up in the following categorization. There are five major areas of interests in meta-research: methods, reporting, reproducibility, evaluation and incentives. Each of them was not only explicitly defined and illustrated with examples, but also for each area were found the existing initiatives. These mentioned features of the work can be summarized as following categorizations:
 		\label{sec:AreasOfMetaresearch:cat}  
@@ -230,7 +245,7 @@ This section aims to show different types of ontologies, which are used by scien
 	
 	It remains to be said that the authors consider the \textbf{Future} of their presented ontology and the preliminary results that it has shown as a step towards organizing and accommodating such a ontology, which can also support other Software Engineering knowledge domains(not only the systematic review process).  \newline
 	
-	
+	\subsection{Comparative analysis}
 	To sum up, we could observe in this section four ontologies that were introduced by three different groups of researchers. Although the scientists had set different objectives and problems that they tried to solve, here can be discussed similarities of suggested in this sections ontologies. Firstly, it is remarkable that all researchers point on the advantages and opportunities which the adoption of ontologies give them in realization of their intentions. In the researcher's opinion, an ontology is the best tool to accumulate any experience or knowledge (especially, from experiments), formalize them for later representing, sharing and transferring. Nevertheless, ontology is not a silver bullet, because of apparent drawbacks. It cannot depict preciously all objects of the real world and relations between them. An ontology is still restricted by the first-order logic. But sometimes it can be enough to get desired results. Secondly, even though only Biolchini et al.\cite{Bio07} intended to work directly on the supporting of systematic reviews, the other presented ontology also pertain to them e. g. Garcia et.al.\cite{Gar08} evaluated their ontology on experiments with V\&V techniques\cite{Bas87} and H. Siy and Y. Wu \cite{SiyWu12} on experiments with software inspections\cite{Bas99}. This congeniality shows us, how important systematic reviews are and thereby EBSE in modern Software Engineering.\newline
 	To the very end, let us discuss the differences between the presented ontologies. First of all, according to the categorization in \autoref{sec:AreasOfMetaresearch:cat}, the Biolchini et. al. for supporting systematic reviews\cite{Bio07} must definitely belong to the area Methods as by analogy provided initiative Cochrane Collabaration for Systematic reviews of health care; Garcia et. al. two ontologies\cite{Gar08}\cite{Gar11} exactly match the category Reproducibility, since their main objective to support replication of the SE studies; the last one by H. Siy and Y. Wu\cite{SiyWu12} might belong to as Reproducibity as Methods because of similarities with three ontologies presented before. Finally, we could observe that the modeling of each presented ontology was done by using of different ontology languages or at least different kinds of the same language what can also lead to the barriers by applying of the presented ontologies and making them standards in the research field.
 	  	 
