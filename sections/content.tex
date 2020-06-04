@@ -33,14 +33,51 @@ Before we go to the main sections of this seminar work, there should be introduc
 		
 		Despite the opportunities that RDFS gives us, it still has the following problem: it is not enough expressive i.e. there is no local restrictions on a knowledge domain e.g. it is not possible to make a predicate \textit{hasChild} differ wether it is applied on a class Person or a class Animal (no semantic difference); there is no transitive, symmetric or reverse predicate e.g. it is not possible to express with a predicate \textit{touches} if a thing A touches another thing B, then B also touches A; and many other restrictions.
 		
-		All these restrictions made scientist to elaborate a new knowledge representation language that is called Description Logic. It is a pure theoretical language that helps to understand the main concepts and terms of contemporary ontology language standards such as Web Ontology Language.        
+		All these restrictions made scientist to elaborate a new family of knowledge representation languages that is called Description Logic (DL). It consists of different dialects and differs from other approaches with formal semantics (more expressive and usually solvable) and instruments of logical analysis. As an example of one of the simplest DL dialect we will look at EL DL that can be solved in polynomial time and helps to understand the main concepts and terms of contemporary ontology language standards such as Web Ontology Language.
 		
+		\begin{figure}
+			\centering
+			\includegraphics[width=10cm]{images/ELDL.PNG}
+			\caption{Architecture of Description Logic \cite[lecture 8, slide 1]{Kon10}}
+			\label{fig:ArchDL}
+		\end{figure}   
+		The main difference between EL DL and RDFS is a clear separation between Terminology (to define the concepts and relations in an ontology schema) and Assertions (define data or concrete individuals that pertain to the concepts in the schema). The architecture of a EL DL can be observed on \autoref{fig:ArchDL}. The main syntax can be described through:
+			\begin{itemize}
+				\item Names of \textit{Concepts} (also classes) such as \textit{Person, Female, ...} 
+				\item Names of \textit{roles} (also relations) such as \textit{isWrittenBy, hasChild, ...}
+				\item Concept \textit{Thing} $\top$, Everything (every concept) is a \textit{Thing} 
+				\item Conjunction (logical and) $\sqcap$; Existence quantor $\exists$ 
+				\item Definition or equivalence $\equiv$; Primitive definition or subset $\sqsubseteq$
+			\end{itemize}
+		Let us illustrate the above-named semantics with trivial examples. For example,  $Person\sqcap Female$  is an intersection of classes Person and Female i.e. woman; $Person \sqcap \exists hasChild.\top$ is a Person, who has a child i.e. a parent; $Person \sqcap \exists hasChild.\top \sqcap \exists hasChild.\top $ is simply a grandparent. The last but not least, let us introduce examples with definition and subsets: we can define a father as $Father\equiv Person \sqcap Male \sqcap \exists hasChild.\top$ the statement $Father \sqsubseteq Person$ would be also valid.
 		
+		It is noteworthy, that in comparison with a boolean logic there is not negation ($\lnot$), disjunction ($\lor$) and all quantor ($\forall$).Nevertheless, it allows us to express many ideas though writing concepts and connecting them via roles and everything with a rather simple syntax e.g. without inserting variables x, y, z, etc., as it is required in the first-order predicate logic.
+		
+		Now, it is time to introduce the latest standard in ontology languages for Semantic Web (more in \autoref{sec:SemWeb}), namely the Ontology Web Language (OWL)\cite{owl04}. By the establishing of a new standard there were set two main purposes. Firstly, the integrating of DL concepts and, secondly, retain the already existing ontologies i.e. full compatibility with RDFS, otherwise the existing ontologies had to be discarded. As a family of DL languages OWL has also diverse dialects e.g. OWL Full, OWL DL, OWL, etc.(see \autoref{fig:owltypes}) Lite,  that serve as appropriate tools for different types of tasks. In sum, the syntax of OWL: is based on RDF (XML), on XML (complement RDF and does not follow all rules of RDF) and on DL theory (elaborated logical foundations), has an abstract syntax and graphical representation in UML.      	
+		\begin{figure}
+			\centering
+			\includegraphics[width=10cm]{images/owltypes.PNG}
+			\caption{OWL dialects \cite[lecture 8, slide 40]{Kon10}}
+			\label{fig:owltypes}
+		\end{figure}             
+		
+		In this seminar work there is not any intention to observe all dialects and all features in OWL, thus, we will consider some features of OWL EL (a dialect of OWL based on DL EL). Hence, the main aspects of OWL can be summed up it the following itemization (instead of XML notation is used abstract syntax): 
+			\begin{itemize}
+				\item Classes are concepts and also help to express the definitions ($\sqsubseteq$ and $\equiv$) with corresponding reserved words $Class(name1\  partial\ name2)$ and $Class(name1\ complete\ name2)$
+				\item There are existence ($\exists$) and \textbf{all} ($\forall$) quantors that are expressed by \newline
+				 $restriction(prop\ someValuesFrom(class))$ and $restriction(prop\  allValuesFrom(class))$
+				\item It is possible to \textbf{disjoint} classes ($DisjointClasses(class1 ... classN)$)
+				\item Both conjunction and \textbf{disjunction} are permitted ($unionOf(...)$ and $intersectionOf(...)$)
+				\item \textbf{Negation} of classes is in ($complementOf(class)$)   
+			\end{itemize}
+		As we can see, the OWL is more powerful in comparison with DL EL or RDFS. Therefore, one statement can be expressed with different variants. For example, $A \sqsubseteq B$ can be expressed by three absolutely equivalent variants: $Class(A\ partial\ B),\ SubClassOf(A\  B),$ or $DisjointClasses(A\ complementOf(B))$. It can be a good so-called syntactic sugar, but also cause many problems as well.  
 		\subsubsection{Expediency and reasons for using of Ontologies}
-		Here is discussed, when and where the ontologies should be used and when it is superfluous
-		\subsubsection{Examples of Ontologies}
-		Here come the examples of ontologies in medicine, then in Meta-research and SE.
+		After the considering of a power of DL languages and some standards such as RDFS and OWL, we can now understand, what opportunities and expressiveness we have, namely we are able to: determine concepts(classes) of knowledge domain, organize them in hierarchy (subclass, superclass), determine attributes, relations and restrictions of classes and, finally, determine instances of classes and assign the values to the corresponding attributes and relations. This all allows us to reach a common understanding of terms that can be used for interchanging of pure information independent on languages, definitions and other syntactic barriers. Moreover, ontology languages make possible to reuse of obtained knowledge and standardize them. 
 		
+		When should we develop an ontology? Of course, if it is desired to fulfill all aspects which were mentioned above, then it is strongly recommended and maybe even urgent. For instance, a structured and standardized collection of medical terms SNOMED CT[cite] that includes definitions, descriptions, synonyms etc. for medical diseases is so huge that there does not exist any person who could keep in mind even a small part of knowledge of this ontology. Once the ontology is established, it is possible simply to insert new entries (e.g. new diseases) without knowing any technical details of ontologies and the ontology automatically facilitates the classification of the new entries by integrating them properly in existing hierarchy based on determined concepts and relations. Besides, it allows any doctor to find the medical that he/she is looking for and see not only the whole information about this term, but also its place in the hierarchy. 
+		Sometimes, it is superfluous to develop an ontology e.g. if it needed to organize less than 100 terms or the similar tasks. But sometimes it is not possible to express everything that is desired e.g. \flqq{Despite consisting of a powerful family of semantically well-founded formalisms’, DLs are not endowed with the basic mathematical resources necessary for representing neural networks, for instance the arithmetical operations.}\frqq[cite]        
+		
+		Therefore, despite the power of ontologies, it is always very important to consider all advantages and drawbacks, namely the expediency, that the using of ontology gives us.  
 	\subsection{Meta-research}
 		\subsubsection{Motivation}
 		A statement \flqq{Science is one of the main driver of human progress}\frqq \ is indisputable and proved by growing number of published papers and publishing authors\cite{Ioa14}. Naturally people face the problems such as data sharing, replications of experiments, its ownership and many others. Moreover, the research practices suffer from lack of systematization and inefficiency. For example, according to \cite{Mac14}  85\% of resources in biomedical research are wasted because of above-called reasons. Therefore, there exists the urgent need of Meta-research, which aims to include the evaluation of diverse researches with succeeding suggestions of improvement for research practices.    
@@ -252,6 +289,7 @@ This section aims to show different types of ontologies, which are used by scien
 \section{Ontology-based systems in scientific search}
 During the searching and reading of the suggested and found by reference-based search papers the two facts have appeared in sight: Ontologies are used in contemporary search engines and the the scientific world is using ontologies successfully for a big amount of tasks. Therefore, based on database search (because this was not the original accent of the suggested literature list) the papers about Ontology-based systems in scientific search were found and will be analyzed further in this section.
 		\subsection{Semantic Web}
+		\label{sec:SemWeb}
 		Every discussion about ontologies is incomplete, if the concept of Semantic web is omitted. Therefore, in this subsection the Semantic Web is presented and compared with a traditional Web (WWW).
 		
 		The first definition of Semantic Web was coined by T. Berners-Lee: \flqq{The Semantic Web is an extension of the current web in which information is given well-defined meaning, better enabling computers and people to work in cooperation}\frqq\cite{Ber01}. But what are the purposes that we are not be able to use the traditional Web and urgent need the Semantic one? 
