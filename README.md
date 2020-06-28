@@ -26,6 +26,7 @@ In dieser Proseminar-Arbeit sollen zunächst Ontologien als Beschreibungsansatz 
 * Ferreira, Waldemar, Maria Teresa Baldassarre, and Sergio Soares. "Codex: A metamodel ontology to guide the execution of coding experiments." Computer Standards & Interfaces 59 (2018): 35-44.
 * Brack, Arthur, et al. "Requirements Analysis for an Open Research Knowledge Graph." arXiv preprint arXiv:2005.10334 (2020).
 * Mayer, Rudolf, Tomasz Miksa, and Andreas Rauber. "Ontologies for describing the context of scientific experiment processes." 2014 IEEE 10th International Conference on e-Science. Vol. 1. IEEE, 2014.
+* Salatino, Angelo A., et al. "The computer science ontology: a large-scale taxonomy of research areas." International Semantic Web Conference. Springer, Cham, 2018.
 
 ## Literatur-Suche
 * ACM - https://dl.acm.org/
