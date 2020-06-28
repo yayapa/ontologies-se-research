@@ -25,6 +25,7 @@ In dieser Proseminar-Arbeit sollen zunächst Ontologien als Beschreibungsansatz 
 * Cuadrado-Gallego, J., et al. "Epistemological and ontological representation in software engineering." International Conference on Computational Science. Springer, Berlin, Heidelberg, 2007.
 * Ferreira, Waldemar, Maria Teresa Baldassarre, and Sergio Soares. "Codex: A metamodel ontology to guide the execution of coding experiments." Computer Standards & Interfaces 59 (2018): 35-44.
 * Brack, Arthur, et al. "Requirements Analysis for an Open Research Knowledge Graph." arXiv preprint arXiv:2005.10334 (2020).
+* Mayer, Rudolf, Tomasz Miksa, and Andreas Rauber. "Ontologies for describing the context of scientific experiment processes." 2014 IEEE 10th International Conference on e-Science. Vol. 1. IEEE, 2014.
 
 ## Literatur-Suche
 * ACM - https://dl.acm.org/
@@ -36,3 +37,7 @@ In dieser Proseminar-Arbeit sollen zunächst Ontologien als Beschreibungsansatz 
 ## Elektronische Aufsatzlieferung (LEA)
 * LEA (Lokales Elektronisches Aufsatzliefersystem) liefert Mitarbeiterinnen und Mitarbeitern sowie Studierenden des KIT kostenlos Scans von Aufsätzen aus gedruckten Zeitschriften der KIT-Bibliothek (falls Publikation nicht online verfügbar).
 * [Elektronische Aufsatzlieferung (LEA)](https://www.bibliothek.kit.edu/cms/lea.php)
+
+
+## E-Tutorials
+* E-Tutorials zu [Informationskompetenz und Literaturrecherche](https://www.bibliothek.kit.edu/cms/e-tutorials.php)
