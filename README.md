@@ -42,3 +42,6 @@ In dieser Proseminar-Arbeit sollen zunächst Ontologien als Beschreibungsansatz 
 
 ## E-Tutorials
 * E-Tutorials zu [Informationskompetenz und Literaturrecherche](https://www.bibliothek.kit.edu/cms/e-tutorials.php)
+
+## Präsentation
+* Reynolds, Garr. Presentation Zen: Simple ideas on presentation design and delivery. New Riders, 2011.
