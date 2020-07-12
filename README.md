@@ -28,6 +28,8 @@ In dieser Proseminar-Arbeit sollen zunächst Ontologien als Beschreibungsansatz 
 * Mayer, Rudolf, Tomasz Miksa, and Andreas Rauber. "Ontologies for describing the context of scientific experiment processes." 2014 IEEE 10th International Conference on e-Science. Vol. 1. IEEE, 2014.
 * Salatino, Angelo A., et al. "The computer science ontology: a large-scale taxonomy of research areas." International Semantic Web Conference. Springer, Cham, 2018.
 * Sun, Yueming, et al. "Towards evidence-based ontology for supporting systematic literature review." (2012): 171-175.
+* Travassos, Guilherme H., et al. "An environment to support large scale experimentation in software engineering." 13th IEEE International Conference on Engineering of Complex Computer Systems (ICECCS 2008). IEEE, 2008.
+
 
 ## Literatur-Suche
 * ACM - https://dl.acm.org/
