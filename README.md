@@ -27,6 +27,7 @@ In dieser Proseminar-Arbeit sollen zunächst Ontologien als Beschreibungsansatz 
 * Brack, Arthur, et al. "Requirements Analysis for an Open Research Knowledge Graph." arXiv preprint arXiv:2005.10334 (2020).
 * Mayer, Rudolf, Tomasz Miksa, and Andreas Rauber. "Ontologies for describing the context of scientific experiment processes." 2014 IEEE 10th International Conference on e-Science. Vol. 1. IEEE, 2014.
 * Salatino, Angelo A., et al. "The computer science ontology: a large-scale taxonomy of research areas." International Semantic Web Conference. Springer, Cham, 2018.
+* Sun, Yueming, et al. "Towards evidence-based ontology for supporting systematic literature review." (2012): 171-175.
 
 ## Literatur-Suche
 * ACM - https://dl.acm.org/
