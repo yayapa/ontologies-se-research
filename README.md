@@ -1,4 +1,4 @@
-# Proseminar SoSe'20 - Investigation of Ontologies in Software-Engineering-Meta-Research
+# Proseminar SoSe'20 - Investigation of Ontologies in Software-Engineering-(Meta-)Research
 
 In dieser Proseminar-Arbeit sollen zunächst Ontologien als Beschreibungsansatz anhand von Bewertungskriterien analysiert werden. Geben Sie einen Überblick zum aktuellen Stand der Forschung über den Einsatz von Ontologien in der Software-Engineering-Meta-Forschung und bewerten Sie diese Ansätze.
 
@@ -24,12 +24,12 @@ In dieser Proseminar-Arbeit sollen zunächst Ontologien als Beschreibungsansatz 
 * Ferreira, Waldemar, et al. "Toward a Meta-Ontology for Accurate Ontologies to Specify Domain Specific Experiments in Software Engineering." International Conference on Product-Focused Software Process Improvement. Springer, Cham, 2015.
 * Cuadrado-Gallego, J., et al. "Epistemological and ontological representation in software engineering." International Conference on Computational Science. Springer, Berlin, Heidelberg, 2007.
 * Ferreira, Waldemar, Maria Teresa Baldassarre, and Sergio Soares. "Codex: A metamodel ontology to guide the execution of coding experiments." Computer Standards & Interfaces 59 (2018): 35-44.
-* Brack, Arthur, et al. "Requirements Analysis for an Open Research Knowledge Graph." arXiv preprint arXiv:2005.10334 (2020).
 * Mayer, Rudolf, Tomasz Miksa, and Andreas Rauber. "Ontologies for describing the context of scientific experiment processes." 2014 IEEE 10th International Conference on e-Science. Vol. 1. IEEE, 2014.
-* Salatino, Angelo A., et al. "The computer science ontology: a large-scale taxonomy of research areas." International Semantic Web Conference. Springer, Cham, 2018.
 * Sun, Yueming, et al. "Towards evidence-based ontology for supporting systematic literature review." (2012): 171-175.
 * Travassos, Guilherme H., et al. "An environment to support large scale experimentation in software engineering." 13th IEEE International Conference on Engineering of Complex Computer Systems (ICECCS 2008). IEEE, 2008.
 
+* Brack, Arthur, et al. "Requirements Analysis for an Open Research Knowledge Graph." arXiv preprint arXiv:2005.10334 (2020).
+* Salatino, Angelo A., et al. "The computer science ontology: a large-scale taxonomy of research areas." International Semantic Web Conference. Springer, Cham, 2018.
 
 ## Literatur-Suche
 * ACM - https://dl.acm.org/
